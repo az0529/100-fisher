@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/MCU/ESP32/Atk_Project/100-fisher/build/CMakeFiles/bootloader
+D:/MCU/ESP32/Atk_Project/100-fisher/build/CMakeFiles/bootloader.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/CMakeFiles/bootloader-complete.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/MCU/ESP32/Atk_Project/100-fisher/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
