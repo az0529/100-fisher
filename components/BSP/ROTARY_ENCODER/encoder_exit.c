@@ -118,5 +118,4 @@ void encoder_gpio_init()
     gpio_isr_handler_add(ENCODER_B_PIN, encoder_isr_handler, NULL);  // 为 B 相添加中断处理函数
     gpio_isr_handler_add(ENCODER_C_PIN, button_isr_handler, NULL);   // 为按钮添加中断处理函数
 }
-git config --global user.name "xvzeng123"
-git config --global user.email "2641740170@qq.com"
+
