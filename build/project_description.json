@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "00-basic",
-    "project_version":    "1",
+    "project_version":    "5d3d1fa-dirty",
     "project_path":       "D:/MCU/ESP32/Atk_Project/100-fisher",
     "idf_path":           "D:/MCU/ESP32/Espressif/frameworks/esp-idf-v5.4",
     "build_dir":          "D:/MCU/ESP32/Atk_Project/100-fisher/build",
@@ -35,13 +35,13 @@
             "dir": "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP",
             "type": "LIBRARY",
             "lib": "__idf_BSP",
-            "reqs": [ "driver", "esp_lcd", "esp_adc" ],
+            "reqs": [ "driver", "esp_lcd", "esp_adc", "esp_timer", "nvs_flash", "Middlewares", "esp_wifi", "esp_event", "esp_http_client" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/MCU/ESP32/Atk_Project/100-fisher/build/esp-idf/BSP/libBSP.a",
-            "sources": [ "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/LED/led.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/I2C/i2c_bus.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/ADC/adc.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/ROTARY_ENCODER/encoder_exit.c" ],
-            "include_dirs": [ "LED", "I2C", "ADC", "ROTARY_ENCODER" ]
+            "sources": [ "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/LED/led.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/I2C/i2c_bus.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/ADC/adc.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/ROTARY_ENCODER/encoder_exit.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/LEDC/ledc.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/BUZZER/buzzer.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/DS18B20/ds18b20.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/Network/network.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/ULTRASONIC/ultrasonic.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP/POWER/power_management.c" ],
+            "include_dirs": [ "LED", "I2C", "ADC", "ROTARY_ENCODER", "LEDC", "BUZZER", "DS18B20", "Network", "ULTRASONIC", "POWER" ]
         },
         "Middlewares": {
             "alias": "idf::Middlewares",
@@ -55,8 +55,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/MCU/ESP32/Atk_Project/100-fisher/build/esp-idf/Middlewares/libMiddlewares.a",
-            "sources": [ "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/OLED/oled.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/OLED/oled_font.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/OLED/ssd1306.c" ],
-            "include_dirs": [ "OLED" ]
+            "sources": [ "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/OLED/oled.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/OLED/oled_font.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/OLED/ssd1306.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/Menu_Cmd/actions.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/Menu_Cmd/menu.c", "D:/MCU/ESP32/Atk_Project/100-fisher/components/Middlewares/Menu_Cmd/settings.c" ],
+            "include_dirs": [ "OLED", "Menu_Cmd" ]
         },
         "app_trace": {
             "alias": "idf::app_trace",
@@ -2947,7 +2947,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "OLED" ]
+            "include_dirs": [ "OLED", "Menu_Cmd" ]
         },
         "BSP": {
             "alias": "idf::BSP",
@@ -2955,11 +2955,11 @@
             "prefix": "idf",
             "dir": "D:/MCU/ESP32/Atk_Project/100-fisher/components/BSP",
             "lib": "__idf_BSP",
-            "reqs": [ "driver", "esp_lcd", "esp_adc" ],
+            "reqs": [ "driver", "esp_lcd", "esp_adc", "esp_timer", "nvs_flash", "Middlewares", "esp_wifi", "esp_event", "esp_http_client" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "LED", "I2C", "ADC", "ROTARY_ENCODER" ]
+            "include_dirs": [ "LED", "I2C", "ADC", "ROTARY_ENCODER", "LEDC", "BUZZER", "DS18B20", "Network", "ULTRASONIC", "POWER" ]
         },
         "espressif__cmake_utilities": {
             "alias": "idf::espressif__cmake_utilities",

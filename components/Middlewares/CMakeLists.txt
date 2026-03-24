@@ -1,8 +1,10 @@
 set(src_dirs
-             OLED)
+             OLED
+             Menu_Cmd)
 
 set(include_dirs
-             OLED)
+             OLED
+             Menu_Cmd)
 set(requires
              driver
              BSP)

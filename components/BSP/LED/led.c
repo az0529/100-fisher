@@ -13,3 +13,23 @@ void led_init(void)
 
     LED(1);
 }
+
+void led_on(void)
+{
+    LED(0);
+}
+
+void led_off(void)
+{
+    LED(1);
+}
+
+void led_test(void)
+{
+    for (int i = 0; i < 5; i++) {
+        led_on();
+        vTaskDelay(pdMS_TO_TICKS(500));
+        led_off();
+        vTaskDelay(pdMS_TO_TICKS(500));
+    }
+}
